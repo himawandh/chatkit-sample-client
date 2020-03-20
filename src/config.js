@@ -1,9 +1,9 @@
 const auth0Domain = 'pusher-chatkit-demo.auth0.com'
 const auth0ClientID = 'VF0kHM9szMj0aQGEfqafrdAKVwRb2a3Q'
-//const auth0RedirectUri = 'https://chatkit-sample.netlify.com/'
+const auth0RedirectUri = 'https://chatkit-sample.netlify.com/'
 //const auth0Domain = 'apimyapp.auth0.com'
 //const auth0ClientID = 'wB83IRkSIW0QEHSZsqcSpDiAdmjkQyLj'
-const auth0RedirectUri = 'https://obrolan.netlify.com/'
+//const auth0RedirectUri = 'https://obrolan.netlify.com/'
 
 // const auth0RedirectUri = 'http://localhost:3000' /* Testing locally */
 
