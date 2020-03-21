@@ -64,15 +64,7 @@ class App extends React.Component {
 
   render() {
 
-    if(this.props.auth.isAuthenticated()) return(<Chat userId = {this.auth.getUserId()}/>)    
-    if(this.props.auth.isAuthenticated())
-    return(    
-      <div onClick={this.props.auth.logout()}>Log Out
-        <svg>
-          <use xlinkHref="index.svg#remove" />
-        </svg>
-      </div>
-    )
+    if(this.props.auth.isAuthenticated()) return(<Chat userId = {this.auth.getUserId()}/>)
 
     if(this.hasHashToken(this.props)){
       return(
@@ -90,7 +82,7 @@ class App extends React.Component {
 }
 
 class Main extends React.Component {
-    state = {
+  state = {
     user: {},
     room: {},
     messages: {},
@@ -106,6 +98,7 @@ class Main extends React.Component {
 
     setSidebar: sidebarOpen => this.setState({ sidebarOpen }),
     setUserList: userListOpen => this.setState({ userListOpen }),
+
     // --------------------------------------
     // User
     // --------------------------------------
@@ -358,7 +351,9 @@ class Main extends React.Component {
 // --------------------------------------
 // Authentication
 // --------------------------------------
+
 const auth = new Auth()
+
 ReactDOM.render(
     <Router history={createBrowserHistory()} >
       <Route path="/" render={(props) => <App auth={auth} {...props} />} />
