@@ -88,6 +88,7 @@ class Main extends React.Component {
     typing: {},
     sidebarOpen: false,
     userListOpen: window.innerWidth > 1000,
+    userLogout:this.auth.logout,
   }
 
   actions = {
@@ -97,6 +98,7 @@ class Main extends React.Component {
 
     setSidebar: sidebarOpen => this.setState({ sidebarOpen }),
     setUserList: userListOpen => this.setState({ userListOpen }),
+    setUserLogout: userLogout => this.setState({ userLogout }),
 
     // --------------------------------------
     // User
