@@ -91,9 +91,7 @@ class App extends React.Component {
 
 class Main extends React.Component {
 
-  constructor(){
-    this.auth = new Auth()
-  }        
+  const auth = new Auth()
         
   state = {
     user: {},
@@ -102,7 +100,7 @@ class Main extends React.Component {
     typing: {},
     sidebarOpen: false,
     userListOpen: window.innerWidth > 1000,
-    userLogout:this.auth.logout(),
+    userLogout:auth.logout(),
   }
 
   actions = {
