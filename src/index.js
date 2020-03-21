@@ -88,7 +88,7 @@ class Main extends React.Component {
     typing: {},
     sidebarOpen: false,
     userListOpen: window.innerWidth > 1000,
-    userLogout:this.props.auth.logout(),
+    userLogout:this.auth.logout(),
   }
 
   actions = {
