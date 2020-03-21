@@ -20,7 +20,7 @@ import createBrowserHistory from "history/createBrowserHistory";
 import ChatManager from './chatkit'
 
 import Auth from './auth/auth'
-
+const auth = new Auth()
 // --------------------------------------
 // Application
 // --------------------------------------
@@ -88,7 +88,7 @@ class Main extends React.Component {
     typing: {},
     sidebarOpen: false,
     userListOpen: window.innerWidth > 1000,
-    userLogout:this.auth.logout(),
+    userLogout:auth.logout(),
   }
 
   actions = {
@@ -353,7 +353,7 @@ class Main extends React.Component {
 // Authentication
 // --------------------------------------
 
-const auth = new Auth()
+//const auth = new Auth()
 
 ReactDOM.render(
     <Router history={createBrowserHistory()} >
