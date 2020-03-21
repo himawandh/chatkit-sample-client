@@ -11,7 +11,7 @@ export const RoomHeader = ({
         <use xlinkHref="index.svg#menu" />
       </svg>
     </button>
-    <h1>{room.name && room.name.replace(user.id, '')}</h1>
+    <h3>{room.name && room.name.replace(user.id, '')}</h3>
     {room.users && (
       <div onClick={e => setUserList(!userListOpen)}>
         <span>{room.users.length}</span>
