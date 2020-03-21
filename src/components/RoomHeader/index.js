@@ -2,8 +2,8 @@ import React from 'react'
 import style from './index.module.css'
 
 export const RoomHeader = ({
-  state: { room, user, sidebarOpen, userListOpen },
-  actions: { setSidebar, setUserList },
+  state: { room, user, sidebarOpen, userListOpen, userLogout },
+  actions: { setSidebar, setUserList,setUserLogout },
 }) => (
   <header className={style.component}>
     <button onClick={e => setSidebar(!sidebarOpen)}>
