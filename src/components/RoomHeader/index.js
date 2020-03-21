@@ -11,13 +11,13 @@ export const RoomHeader = ({
         <use xlinkHref="index.svg#menu" />
       </svg>
     </button>
-    <h1>{room.name && room.name.replace(user.id, '')}</h1>
-    {room.users && (
-      <div>Log Out
+    <h1>{room.name && room.name.replace(user.id, '')}</h1>      
+    <div>Log Out
         <svg>
           <use xlinkHref="index.svg#remove" />
         </svg>
-      </div>       
+      </div>  
+    {room.users && (
       <div onClick={e => setUserList(!userListOpen)}>
         <span>{room.users.length}</span>
         <svg>
