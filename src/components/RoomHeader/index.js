@@ -6,6 +6,7 @@ export const RoomHeader = ({
   actions: { setSidebar, setUserList },
 }) => (
   <header className={style.component}>
+    <button>Log Out</button>
     <button onClick={e => setSidebar(!sidebarOpen)}>
       <svg>
         <use xlinkHref="index.svg#menu" />
