@@ -6,7 +6,6 @@ export const RoomHeader = ({
   actions: { setSidebar, setUserList },
 }) => (
   <header className={style.component}>
-    <button>Log Out</button>
     <button onClick={e => setSidebar(!sidebarOpen)}>
       <svg>
         <use xlinkHref="index.svg#menu" />
@@ -14,6 +13,11 @@ export const RoomHeader = ({
     </button>
     <h1>{room.name && room.name.replace(user.id, '')}</h1>
     {room.users && (
+      <div>Log Out
+        <svg>
+          <use xlinkHref="index.svg#remove" />
+        </svg>
+      </div>       
       <div onClick={e => setUserList(!userListOpen)}>
         <span>{room.users.length}</span>
         <svg>
