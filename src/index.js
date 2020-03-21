@@ -64,7 +64,15 @@ class App extends React.Component {
 
   render() {
 
-    if(this.props.auth.isAuthenticated()) return(<Chat userId = {this.auth.getUserId()}/>)
+    if(this.props.auth.isAuthenticated()) return(<Chat userId = {this.auth.getUserId()}/>)    
+    if(this.props.auth.isAuthenticated())
+    return(    
+      <div onClick={this.props.auth.logout()}>Log Out
+        <svg>
+          <use xlinkHref="index.svg#remove" />
+        </svg>
+      </div>
+    )
 
     if(this.hasHashToken(this.props)){
       return(
@@ -89,7 +97,6 @@ class Main extends React.Component {
     typing: {},
     sidebarOpen: false,
     userListOpen: window.innerWidth > 1000,
-    userLogout: this.props.auth.logout(),    
   }
 
   actions = {
@@ -99,7 +106,6 @@ class Main extends React.Component {
 
     setSidebar: sidebarOpen => this.setState({ sidebarOpen }),
     setUserList: userListOpen => this.setState({ userListOpen }),
-    setUserLogout: userLogout => this.setState({ userLogout }),
 
     // --------------------------------------
     // User
