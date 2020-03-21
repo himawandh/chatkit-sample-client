@@ -18,7 +18,7 @@ export const RoomHeader = ({
           <use xlinkHref="index.svg#remove" />
         </svg>
       </div>
-    )}
+    )},
     {room.users && (
       <div onClick={e => setUserList(!userListOpen)}>
         <span>{room.users.length}</span>
