@@ -90,17 +90,14 @@ class App extends React.Component {
 }
 
 class Main extends React.Component {
-
-  const auth = new Auth()
-        
-  state = {
+    state = {
     user: {},
     room: {},
     messages: {},
     typing: {},
     sidebarOpen: false,
     userListOpen: window.innerWidth > 1000,
-    userLogout:auth.logout(),
+    userLogout:this.props.auth.logout(),
   }
 
   actions = {
