@@ -65,11 +65,6 @@ class App extends React.Component {
   render() {
 
     if(this.props.auth.isAuthenticated()) return(<Chat userId = {this.auth.getUserId()}/>)
-   
-    if(this.props.auth.isAuthenticated()) return(
-        <button onClick = {this.auth.logout()}>Log Out</button>
-    )    
-
     if(this.hasHashToken(this.props)){
       return(
         <Loading  
