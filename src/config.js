@@ -9,7 +9,7 @@ const auth0RedirectUri = 'https://chatkit-sample.netlify.com/'
 
 const chatkitTokenProviderEndpoint = '.netlify/functions/token'
 
-//const chatkitInstanceLocator = 'v1:us1:7954c374-f491-4c08-b71e-5abfc0a3dc89'
-const chatkitInstanceLocator = 'v1:us1:b80cabb2-ec4b-4c6e-8676-667607b40360'
+const chatkitInstanceLocator = 'v1:us1:7954c374-f491-4c08-b71e-5abfc0a3dc89'
+//const chatkitInstanceLocator = 'v1:us1:b80cabb2-ec4b-4c6e-8676-667607b40360'
 
 export { auth0Domain, auth0ClientID, auth0RedirectUri, chatkitTokenProviderEndpoint, chatkitInstanceLocator }
