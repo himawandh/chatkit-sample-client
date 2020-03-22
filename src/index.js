@@ -309,7 +309,7 @@ class Main extends React.Component {
       <main>
         <aside data-open={sidebarOpen}>
           <UserHeader user={user} />
-          <div onClick={this.logout.bind(this)}>Sign-Out</div>
+          <button className="btn-margin" onClick={this.logout.bind(this)}>Sign-Out</button>
           <RoomList
             user={user}
             rooms={user.rooms}
