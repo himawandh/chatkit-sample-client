@@ -291,6 +291,10 @@ class Main extends React.Component {
       ChatManager(this, existingUser)
   }
 
+  logout() {
+    this.props.auth.logout();
+  }
+
   render() {
     const {
       user,
@@ -305,6 +309,7 @@ class Main extends React.Component {
       <main>
         <aside data-open={sidebarOpen}>
           <UserHeader user={user} />
+          <div onClick={this.logout.bind(this)}>Sign-Out</div>
           <RoomList
             user={user}
             rooms={user.rooms}
