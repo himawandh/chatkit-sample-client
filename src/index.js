@@ -160,7 +160,7 @@ class Main extends React.Component {
             addUserIds: [options.user.id],
             private: true,
           })
-
+        window.location.replace("https://obrolanku.netlify.com")
         }
         // exists
         //   ? {
@@ -170,6 +170,7 @@ class Main extends React.Component {
         //       addUserIds: [options.user.id],
         //       private: true,
         //     })
+        
       }
     },
 
