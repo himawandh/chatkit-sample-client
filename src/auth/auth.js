@@ -70,6 +70,6 @@ export default class Auth {
     localStorage.removeItem('expires_at')
     localStorage.removeItem('chatkit_user')
     //TODO: callback to reset the app state.
-    history.push('/')
+    returnTo: window.location.origin
   }
 }
