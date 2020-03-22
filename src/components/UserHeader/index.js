@@ -10,6 +10,7 @@ export const UserHeader = ({ user = {} }) => (
     <div>
       <h4>{user.name}</h4>
       <h5>{user.id && `${user.id}`}</h5>
+      <h4>SignOut</h4>
     </div>
   </header>
 )
