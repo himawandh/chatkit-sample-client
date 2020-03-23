@@ -160,7 +160,6 @@ class Main extends React.Component {
             addUserIds: [options.user.id],
             private: true,
           })
-        this.actions.joinRoom(exists)
         window.location.replace("https://obrolanku.netlify.com")
         }
         // exists
